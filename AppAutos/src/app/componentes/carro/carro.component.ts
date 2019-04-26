@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Carro } from '../../modelo/carro';
+import { CARROS } from 'src/app/transversal/constante';
+import { Router } from '@angular/router';
+import { CarroService } from 'src/app/servicios/carro.service';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-carro',
@@ -10,10 +14,16 @@ export class CarroComponent implements OnInit {
 
   carro:Carro;
   carroEjemplo:Carro;
-  constructor() { }
+  listaCarros= CARROS;
+  constructor(private _router:Router,
+              private _carroService:CarroService) { }
 
   ngOnInit() {
-    this.carroEjemplo = new Carro("Mazda",2000,"2019","kas-586","Auto en venta");
+    console.log(this.listaCarros);
   }
 
+  verDetalle(item:Carro){ 
+    this._carroService.setCarro(item);
+    this._router.navigate(['/carro-detalle']);
+  }
 }

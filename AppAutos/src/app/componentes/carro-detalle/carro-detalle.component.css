@@ -1,0 +1,18 @@
+img{
+    margin:10px 0px 10px 10px;
+    width: 80% !important;
+    height: 194px !important;
+}
+
+.card{
+    width: 100% !important;
+    max-width: 2000px !important;
+}
+
+span{
+    font-weight: bold;
+}
+
+.card-title{
+    font-size: 18px;
+}

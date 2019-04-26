@@ -1,0 +1,23 @@
+.card{
+    max-width:250px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.card:hover{
+    border-color:#008441;
+    max-width: 255px !important;
+}
+
+span{
+    font-weight: bold;
+}
+
+img{
+    margin-top:10px;
+    width: 100% !important;
+    height: 194px !important;
+}
+

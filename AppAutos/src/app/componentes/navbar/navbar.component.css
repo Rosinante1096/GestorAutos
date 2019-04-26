@@ -1,0 +1,16 @@
+div a {
+    color: white;
+}
+ul li a{
+    transition: 1s;
+    cursor:pointer;
+}
+
+ul li a:hover{
+    color: #008441 !important;
+}
+
+.active{
+    color: #008441 !important;
+    font-weight: bold;
+}

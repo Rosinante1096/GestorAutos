@@ -6,7 +6,7 @@ import { Carro } from '../modelo/carro';
 })
 export class CarroService {
 
-  carro:Carro;
+  private carro:Carro;
   constructor() { }
 
   setCarro(carro:Carro){

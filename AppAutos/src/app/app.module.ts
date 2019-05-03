@@ -7,20 +7,25 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { CarroComponent } from './componentes/carro/carro.component';
 import { RouterModule } from '@angular/router';
 import { CarroDetalleComponent } from './componentes/carro-detalle/carro-detalle.component';
+import { CarroService } from './servicios/carro.service';
+import { MotoComponent } from './componentes/moto/moto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CarroComponent,
-    CarroDetalleComponent
+    CarroDetalleComponent,
+    MotoComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CarroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

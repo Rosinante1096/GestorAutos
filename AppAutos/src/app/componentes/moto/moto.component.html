@@ -1,0 +1,20 @@
+<form [formGroup]="datos">
+    <div class="row">
+        <div class="col-md-2">
+            <label>Nombre:</label>
+            <input class="form-control" formControlName="nombre">
+            <label>Marca:</label>
+            <input class="form-control" formControlName="marca">
+            <button class="btn btn-primary" [disabled]="!datos.valid" (click)="FormValidate()">Validar</button>
+            <label>{{valor}}</label>
+        </div>
+    </div>
+    <div class="row" formGroupName="detalle">
+        <div class="col-md-2">
+            <label>Nombre:</label>
+            <input class="form-control" formControlName="nombre">
+            <label>Marca:</label>
+            <input class="form-control" formControlName="peso">
+        </div>
+    </div>
+</form>
